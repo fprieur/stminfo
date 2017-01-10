@@ -8,10 +8,10 @@ The easiest way to use this project is to download the releases and run it on th
 
 If you want to build it from source:
 ### Install this project ###
-`git clone https://github.com/fprieur/stminfo`
+`$ git clone https://github.com/fprieur/stminfo`
 
 ### Build this project ###
-`cd stminfo && go build`
+`$ cd stminfo && go build`
 
 ### Run this project ###
-`stminfo`
+`$ stminfo`
