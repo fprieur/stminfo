@@ -1,0 +1,9 @@
+repo: fprieur/stminfo
+binary_name: stminfo
+build:
+  oses:
+    - darwin
+    - windows
+    - linux
+  arches:
+    - amd64
