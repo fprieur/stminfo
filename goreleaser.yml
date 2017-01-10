@@ -1,6 +1,8 @@
 repo: fprieur/stminfo
 binary_name: stminfo
 build:
+  build:
+    main: stminfo.go
   oses:
     - darwin
     - windows
