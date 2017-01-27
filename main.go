@@ -5,6 +5,7 @@ import (
 	"strings"
 	"github.com/PuerkitoBio/goquery"
 	"fmt"
+	"github.com/jasonlvhit/gocron"
 )
 
 
@@ -27,5 +28,6 @@ func ExampleScrape() {
 }
 
 func main() {
-	ExampleScrape()
+	gocron.Every(1).Minute().Do(ExampleScrape)
+	<- gocron.Start()
 }
