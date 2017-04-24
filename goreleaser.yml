@@ -1,5 +1,8 @@
-repo: fprieur/stminfo
-binary_name: stminfo
+release: 
+  github:
+    owner: fprieur
+    name: stminfo
+binary: stminfo
 build:
   build:
     main: stminfo.go
