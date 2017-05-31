@@ -24,10 +24,17 @@ func ExampleScrape() {
 		etat = strings.Trim(etat, " ")
 		etat = strings.Replace(etat, "\n", "", -1)
 		fmt.Printf("%s - %s\n", couleur, etat)
+
 	})
 }
 
 func main() {
+
+	ExampleScrape()
+
+
+
+
 	gocron.Every(1).Minute().Do(ExampleScrape)
 	<- gocron.Start()
 }
