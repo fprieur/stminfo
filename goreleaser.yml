@@ -5,7 +5,7 @@ release:
 binary: stminfo
 build:
   build:
-    main: stminfo.go
+    main: main.go
   oses:
     - darwin
     - windows
