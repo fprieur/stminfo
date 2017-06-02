@@ -25,17 +25,12 @@ func ExampleScrape() {
 		etat := s.Find("p").Text()
 		etat = strings.Trim(etat, " ")
 		etat = strings.Replace(etat, "\n", "", -1)
-<<<<<<< HEAD
-		fmt.Printf("%s - %s\n", couleur, etat)
-
-=======
 		if strings.Contains(etat, "Interruption de service") {
 			color.Red("%s - %s\n", couleur, etat)
 			sendmailInteruption(couleur+etat, couleur)
 		} else {
 			fmt.Printf("%s - %s\n", couleur, etat)
 		}
->>>>>>> 7c248485228c3915ad571ee0bb1fb45d07d132dc
 	})
 }
 
@@ -64,9 +59,6 @@ func sendmailInteruption(body string, couleur string) {
 func main() {
 
 	ExampleScrape()
-
-
-
 
 	gocron.Every(1).Minute().Do(ExampleScrape)
 	<-gocron.Start()
